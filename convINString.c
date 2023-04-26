@@ -8,7 +8,7 @@
  */
 int inter_M(info_t *info)
 {
-	return (isatty(STDIN_FILENO) && info->readfd <= 2);
+        return (isatty(STDIN_FILENO) && info->readfd <= 2);
 }
 
 /**
@@ -19,10 +19,10 @@ int inter_M(info_t *info)
  */
 int itsDelim(char x, char *Delim)
 {
-	while (*Delim)
-		if (*Delim++ == x)
-			return (1);
-	return (0);
+        while (*Delim)
+                if (*Delim++ == x)
+                        return (1);
+        return (0);
 }
 
 /**
@@ -33,10 +33,10 @@ int itsDelim(char x, char *Delim)
 
 int conAlpha(int x)
 {
-	if ((x >= 'a' && x <= 'z') || (x >= 'A' && x <= 'Z'))
-		return (1);
-	else
-		return (0);
+        if ((x >= 'a' && x <= 'z') || (x >= 'A' && x <= 'Z'))
+                return (1);
+        else
+                return (0);
 }
 
 /**
@@ -47,28 +47,28 @@ int conAlpha(int x)
 
 int conv_in_str(char *w)
 {
-	int i, sign = 1, flag = 0, output;
-	unsigned int result = 0;
+        int i, sign = 1, flag = 0, output;
+        unsigned int result = 0;
 
-	for (i = 0;  w[i] != '\0' && flag != 2; i++)
-	{
-		if (w[i] == '-')
-			sign *= -1;
+        for (i = 0;  w[i] != '\0' && flag != 2; i++)
+        {
+                if (w[i] == '-')
+                        sign *= -1;
 
-		if (w[i] >= '0' && w[i] <= '9')
-		{
-			flag = 1;
-			result *= 10;
-			result += (w[i] - '0');
-		}
-		else if (flag == 1)
-			flag = 2;
-	}
+                if (w[i] >= '0' && w[i] <= '9')
+                {
+                        flag = 1;
+                        result *= 10;
+                        result += (w[i] - '0');
+                }
+                else if (flag == 1)
+                        flag = 2;
+        }
 
-	if (sign == -1)
-		output = -result;
-	else
-		output = result;
+        if (sign == -1)
+                output = -result;
+        else
+                output = result;
 
-	return (output);
+        return (output);
 }
