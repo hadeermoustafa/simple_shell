@@ -2,10 +2,9 @@
 
 /**
  * getOutt - exits out the shell
- * @info: Structure  that containing potential arguments. Used to maintain
- *          constant function prototype.
+ * @info: Structure  that containing potential arguments.
+ *
  *  Return: exits with a given exit status
- *         (0) if info.argv[0] != "exit"
  */
 int getOutt(info_t *info)
 {
@@ -33,7 +32,7 @@ int getOutt(info_t *info)
  * chTHacurrnetDIR - changes the current directory out of the process.
  * @info: Structure containing potential arguments. Used to maintain.
  *
- *  Return: Always 0
+ *  Return: 0
  */
 int chTHacurrnetDIR(info_t *info)
 {

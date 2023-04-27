@@ -1,12 +1,12 @@
 #include "header.h"
 
 /**
- * list_size - determines the length of the list
+ * lLn - determines the length of the list
  * @p: pointer to first node
  *
  * Return: size of list
  */
-size_t list_size(const list_t *p)
+size_t lLn(const list_t *p)
 {
 	size_t i = 0;
 
@@ -19,12 +19,12 @@ size_t list_size(const list_t *p)
 }
 
 /**
- * return_strings - returns an array of strings
+ * reStringss - returns an array of strings
  * @h: pointer to first node
  *
  * Return: array of strings
  */
-char **return_strings(list_t *h)
+char **reStringss(list_t *h)
 {
 	list_t *node = h;
 	size_t i = list_size(h), j;
@@ -56,12 +56,12 @@ char **return_strings(list_t *h)
 
 
 /**
- * print_list - prints all elements of a list_t linked list
+ * pl - prints all elements of a list_t linked list
  * @h: pointer to first node
  *
  * Return: size of list
  */
-size_t print_list(const list_t *h)
+size_t pl(const list_t *h)
 {
 	size_t i = 0;
 
@@ -101,13 +101,13 @@ list_t *node_begins(list_t *node, char *prefix, char c)
 }
 
 /**
- * get_index - gets the index of a node
+ * getinX - gets the index of a node
  * @h: pointes to list head
  * @n: pointes to the node
  *
  * Return: index of node or -1
  */
-ssize_t get_index(list_t *h, list_t *n)
+ssize_t getinX(list_t *h, list_t *n)
 {
 	size_t i = 0;
 

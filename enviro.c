@@ -78,7 +78,7 @@ int rmVarEnvv(info_t *info)
  * popEnvLl - populates env linked lists..
  * @info: Structure containing potential arguments. Used to maintain..
  *
- * Return: Always 0
+ * Return: 0
  */
 int popEnvLl(info_t *info)
 {
