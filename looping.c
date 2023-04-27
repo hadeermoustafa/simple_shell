@@ -7,7 +7,7 @@
  *
  * Return: 0 on success, 1 on error, or error code
  */
-int shell_loop(par_t *par, char **vec)
+int hsh(par_t *par, char **vec)
 {
 	ssize_t s = 0;
 	int ret = 0;
