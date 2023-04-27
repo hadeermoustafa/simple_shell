@@ -124,12 +124,12 @@ int bHistoryList(info_t *info, char *buf, int linecount)
 }
 
 /**
- * renumberHistory - renumbers the history linked list after changes.
+ * ren_History - renumbers the history linked list after changes.
  * @info: Structure containing potential arguments. Used to maintain.
  *
  * Return: the new histcount.
  */
-int renumberHistory(info_t *info)
+int ren_History(info_t *info)
 {
 	list_t *node = info->history;
 	int i = 0;

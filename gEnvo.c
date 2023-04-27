@@ -6,7 +6,7 @@
  *
  * Return: 0
  */
-char *gEnvo(info_t *info)
+char **gEnvo(info_t *info)
 {
 	if (!info->environ || info->env_changed)
 	{

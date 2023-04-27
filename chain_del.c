@@ -36,7 +36,7 @@ int chain_del(data_t *data, char *buff, size_t *addr)
 }
 
 /**
- * check_chain - checks we should continue chaining based on last status
+ * chCH - checks we should continue chaining based on last status
  * @data: the parameter struct
  * @buff: the char buffer
  * @addr: address of current position in buff
@@ -45,7 +45,7 @@ int chain_del(data_t *data, char *buff, size_t *addr)
  *
  * Return: Void
  */
-void check_chain(data_t *data, char *buff, size_t *addr, size_t i, size_t len)
+void chCH(data_t *data, char *buff, size_t *addr, size_t i, size_t len)
 {
 	size_t j = *addr;
 
@@ -70,12 +70,12 @@ void check_chain(data_t *data, char *buff, size_t *addr, size_t i, size_t len)
 }
 
 /**
- * replace_alias - replaces an aliases in the tokenized string
+ * replaceaLI - replaces an aliases in the tokenized string
  * @data: the parameter struct
  *
  * Return: 1 if replaced, 0 otherwise
  */
-int replace_alias(data_t *data)
+int replaceaLI(data_t *data)
 {
 	int i;
 	list_t *node;
@@ -99,12 +99,12 @@ int replace_alias(data_t *data)
 }
 
 /**
- * replace_vars - replaces vars in the tokenized string
+ * reVars - replaces vars in the tokenized string
  * @data: the parameter struct
  *
  * Return: 1 if replaced, 0 otherwise
  */
-int replace_vars(data_t *data)
+int reVars(data_t *data)
 {
 	int i = 0;
 	list_t *node;
@@ -137,4 +137,17 @@ int replace_vars(data_t *data)
 
 	}
 	return (0);
+}
+/**
+ * reString - replaces string
+ * @old: address of old string
+ * @new: new string
+ *
+ * Return: 1 if replaced, 0 otherwise
+ */
+int reString(char **old, char *new)
+{
+	free(*old);
+	*old = new;
+	return (1);
 }

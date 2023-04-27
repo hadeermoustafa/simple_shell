@@ -1,9 +1,9 @@
 #include "header.h"
 
 /**
- * ourHIS - print out the history list, one command by  all line, preceded
- *              with line num, starting at 0.
- * @info: Structure containing potential arguments.
+ * ourHIS - prints out the history list, one command by  all line, preceded
+ *              with line num, starting at 0 ..
+ * @info: Structure containing potential arguments..
  *
  *  Return: 0
  */
@@ -18,7 +18,7 @@ int ourHIS(info_t *info)
  * @info: parameter struct..
  * @str: the string alias..
  *
- * Return: Always 0 on success, 1 on errors
+ * Return: 0 on success, 1 on errors
  */
 int unSetAliases(info_t *info, char *str)
 {
@@ -84,7 +84,7 @@ int printingAliases(list_t *node)
  * myAalins - alias builtin (man alias)
  * @info: Structure containing potential arguments. Used to maintain
  *
- *  Return: Always 0
+ *  Return: 0
  */
 int myAalins(info_t *info)
 {
